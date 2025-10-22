@@ -1,0 +1,99 @@
+/* Gemeinsame Hintergrundfarbe für Navigationsleiste und Info-Box */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    /* Um den Scrollbalken am Body zu vermeiden */
+}
+
+.img-bottom-right {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.txt-back {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    z-index: 9998;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    FONT-SIZE: 18px;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    /* Verhindert übermäßiges Scrollen */
+}
+
+
+/* Stil für die Navigationsleiste */
+
+.navbar {
+    z-index: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.event-details {
+    z-index: 0;
+    grid-column-start: 2;
+    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+}
+
+
+/* Stil für einzelne Event-Links */
+
+.event-link {
+    padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Stil für den Event-Titel */
+
+.event-title {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+
+/* Stil für den Event-Untertitel (Details) */
+
+.event-subtitle {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 3px;
+}
+
+
+/* Stil für das Event-Datum */
+
+.event-date {
+    font-size: 12px;
+    color: grey;
+}
