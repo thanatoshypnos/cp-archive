@@ -8,7 +8,7 @@ function displayEventDocumentation(event) {
 
 // Funktion zum Laden und Hinzufügen von Event-Links
 function loadEventLinks() {
-    fetch("events/events.json")
+    fetch("events.json")
         .then(response => response.json())
         .then(events => {
             events.forEach(event => {
