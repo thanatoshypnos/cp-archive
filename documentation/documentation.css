@@ -1,0 +1,46 @@
+/* Gemeinsame Hintergrundfarbe für Dokumentationsseiten */
+
+.body {
+    background-color: #f2f2f2;
+}
+
+
+/* In documentation.css */
+
+.documentation-container {
+    height: 100vh;
+    margin-top: 35px;
+    margin-left: 5%;
+    /* Dies sollte dem Breitenanteil der Navigationsleiste entsprechen */
+}
+
+.documentation-frame {
+    width: 100%;
+    flex-grow: 1;
+    /* Hier sorgt flex-grow dafür, dass der Inhalt die verfügbare Höhe einnimmt */
+    border: none;
+}
+
+
+/* Stil für Bilder innerhalb der Dokumentationsseite */
+
+.event-details img,
+.documentation-container img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Hier wird das Bild zentriert ausgerichtet */
+}
+
+.documentation-container p {
+    max-width: 60%;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    color: black;
+    text-align: justify;
+    line-height: 1.5;
+    hyphens: none;
+    display: block;
+    margin: 0 auto;
+    /* Hier wird das Bild zentriert ausgerichtet */
+}
